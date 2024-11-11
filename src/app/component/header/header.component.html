@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="header__div" [class.header__mobile-div] = 'mobileValue'>
+    <div class="header__logo">
+      <div class="header__radius">
+        <div class="header__blue-back"></div>
+        <div class="header__white-back" [class.header__white-mobile] = 'mobileValue'></div>
+      </div>
+      <div class="header__title" [class.header__mobile-title] = 'mobileValue'>testLab</div>
+    </div>
+    <nav class="header__nav">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+      <label for="burger-checkbox" class="burger" [class.burger-mobile] = 'mobileValue' (click)="openMenu()"></label>
+      <ul class="header__ul" [class.header__mobile-menu]="mobileValue">
+        <li class="header__li" (click)="openArrow()"><a href="#">Как это работает</a> <img src="https://img.icons8.com/?size=100&id=45331&format=png&color=000000" class='header__icon-arrow' [class.header__mobile-arrow]="mobileArrow"/></li>
+        <div class="header__description" [class.header__mobile-description]="mobileArrow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam harum dolore necessitatibus voluptatibus incidunt eveniet ea ipsum? Labore non, voluptatum, delectus reiciendis aut similique quasi obcaecati dolore, inventore eaque placeat.</div>
+        <li class="header__li" (click)="openArrow()"><a href="#">3-й блок</a> <img src="https://img.icons8.com/?size=100&id=45331&format=png&color=000000" class='header__icon-arrow' [class.header__mobile-arrow]="mobileArrow"/></li>
+        <div class="header__description" [class.header__mobile-description]="mobileArrow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam inventore quaerat vel nostrum perspiciatis nam sint officia. Hic similique error repellat porro expedita dolor et facilis necessitatibus, nihil mollitia.</div>
+        <li class="header__li" (click)="openArrow()"><a href="#">Вопрос и ответы</a> <img src="https://img.icons8.com/?size=100&id=45331&format=png&color=000000" class='header__icon-arrow' [class.header__mobile-arrow]="mobileArrow"/></li>
+        <div class="header__description" [class.header__mobile-description]="mobileArrow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi cupiditate dolore ea nobis nemo quibusdam tempora culpa vitae optio quo autem totam suscipit deleniti obcaecati, reiciendis in eius natus maxime!</div>
+        <li class="header__li" (click)="openArrow()"><a href="#">Форма</a> <img src="https://img.icons8.com/?size=100&id=45331&format=png&color=000000" class='header__icon-arrow' [class.header__mobile-arrow]="mobileArrow"/></li>
+        <div class="header__description" [class.header__mobile-description]="mobileArrow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut, suscipit voluptatem deserunt eaque nihil voluptate atque minima placeat natus fugiat sequi, ipsum, illo ipsam corrupti velit error esse! Soluta.</div>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__second-div">
+    <h2 class="header__h2">Говорят, никогда не поздно сменить профессию</h2>
+    <h4 class="header__h4">Сделай круто тестовое задание и у тебя получится</h4>
+    <button class="header__btn" type="submit">Проще простого!</button>
+  </div>
+</header>
