@@ -1,0 +1,44 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0;
+}
+.main__explanation-h1 {
+  font-family: Graphik LCG;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  margin: 0;
+}
+.main__explanation-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+.main__explanation-div {
+  margin-top: 61px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main__explanation-items {
+  display: flex;
+  flex-direction: column;
+}
+.main__explanation-h4 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+.main__explanation-description {
+  font-family: Graphik LCG;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+}

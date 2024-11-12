@@ -10,8 +10,12 @@
     "serve:ssr:testProject": "node dist/test-project/server/server.mjs"
   },
   "assets": [
-    "src/assets"
- ],
+    "src/assets",
+    {
+      "glob": "**/*",
+      "input": "public"
+    }
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
