@@ -21,6 +21,7 @@
 .main__explanation-div {
   margin-top: 61px;
   display: grid;
+  gap: 32px;
   grid-template-columns: repeat(4, 1fr);
 }
 .main__explanation-items {
@@ -41,4 +42,35 @@
   line-height: 24px;
   text-align: left;
   margin: 0;
+}
+.main__statistics {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+.main__statistics-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.main__statistics-title {
+  font-family: Graphik LCG;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+}
+.main__statistics-stat {
+  font-family: Graphik LCG;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color:rgba(94, 100, 106, 1);
+}
+.main__statistics-right{
+  width: 592px;
+  height: 448px;
 }
